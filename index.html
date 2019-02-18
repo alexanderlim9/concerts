@@ -5,9 +5,11 @@ title: Home
 <h1>Concerts</h1>
 
 {% for concert in site.data.concerts %}
-    <p>{{ site.data.venues.find(concert.venue) }}</p>
-{% endfor %}
+    {% assign venue = site.data.venues | where_exp: "venue", "venue.id == concert.venue[0]" %}
+    {% assign headliner = site.data.artists | where_exp: "headliner", "headliner.id == concert.headliner[0]" %}
 
-{% for venue in site.data.venues %}
-    <p>{{ venue.name }}</p>
+    <div>
+        <h2>{{ headliner[0].artist | jsonify | remove:'"'}}</h2>
+        <p>{{ venue[0].name | jsonify | remove:'"'}}</p>
+    </div>
 {% endfor %}
