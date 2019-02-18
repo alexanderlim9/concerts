@@ -1,0 +1,11 @@
+title: Alex's Concerts
+email: lim.a@husky.neu.edu
+description: >-
+  I go to a lot of concerts and I need some way to keep track of them. 
+  This should be a small project to record and document the concerts I've been to over the years.
+baseurl: "" 
+url: "" 
+twitter_username: journalims
+github_username:  alexanderlim9
+plugins:
+  - airtable

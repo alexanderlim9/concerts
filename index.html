@@ -1,0 +1,13 @@
+---
+layout: default
+title: Home
+---
+<h1>Concerts</h1>
+
+{% for concert in site.data.concerts %}
+    <p>{{ site.data.venues.find(concert.venue) }}</p>
+{% endfor %}
+
+{% for venue in site.data.venues %}
+    <p>{{ venue.name }}</p>
+{% endfor %}
