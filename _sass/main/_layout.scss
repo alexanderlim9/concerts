@@ -3,10 +3,25 @@ body {
     flex-direction: column;
     align-items: center;
     margin: 0px;
-    padding: 50px;
+    padding: 100px;
 }
 
 .container {
     width: 100%;
     max-width: 1200px;
+}
+
+.cover {
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cover_number {
+    width: 10%;
+}
+
+.cover_content {
+    width: 90%;
 }
