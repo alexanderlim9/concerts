@@ -12,7 +12,8 @@ body {
 }
 
 .cover {
-    margin-bottom: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -24,4 +25,17 @@ body {
 
 .cover_content {
     width: 90%;
+}
+
+.cover_content_details {
+    display: flex;
+    flex-direction: row;
+}
+
+.cover_content_details_date {
+    width: 30%;
+}
+
+.cover_content_details_venue {
+    width: 40%;
 }
