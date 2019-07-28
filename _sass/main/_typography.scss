@@ -20,3 +20,22 @@ p, span {
     font-family: 'ff-ernestine-pro', serif;
     font-weight: 400;
 }
+
+.cover_content_opener {
+    margin-top: -5px;
+
+    h2 {
+        font-weight: 300;
+        display: inline;
+        color: gray;
+        font-size: 20px;
+    }
+    
+    :after {
+        content: ' | ';
+    }
+
+    :last-child:after {
+        content: '';
+    }
+}
