@@ -1,0 +1,36 @@
+{% assign show = page.name | remove: ".html" %}
+
+{% for concert in site.data.concerts %}
+    {% if concert.date == show %}
+        {% assign venue = site.data.venues | where_exp: "venue", "venue.id == concert.venue[0]" %}
+        {% assign headliner = site.data.artists | where_exp: "headliner", "headliner.id == concert.headliner[0]" %}
+        {% assign openers = site.data.artists | where_exp: "openers", "concert.openers contains openers.id" %}
+        {% assign friends = site.data.friends | where_exp: "friends", "concert.friends contains friends.id" %}
+    {% endif %}
+{% endfor %}
+
+<div class="show_headliner">
+    <h1>{{ headliner[0].artist }}</h1>
+</div>
+<div class="show_openers list-comma">
+    {% for opener in openers %}
+
+        <h2>{{ opener.artist | jsonify | remove:'"'}}</h2>
+
+    {% endfor %}
+</div>
+<div class="show_details">
+    <h3 class="show_venue">{{venue[0].name}}</h3>
+    <div class="show_friends">
+        {% if friends.size > 0 %}
+            <span>With: </span>
+        {% endif %}
+        <div class="list-comma">
+                {% for friend in friends %}
+        
+                <p>{{ friend.name | jsonify | remove:'"'}}</p>
+            
+            {% endfor %}
+        </div>
+    </div>
+</div>
