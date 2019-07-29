@@ -9,3 +9,9 @@ twitter_username: journalims
 github_username:  alexanderlim9
 plugins:
   - airtable
+page_gen:
+  - index_files: false
+    data: concerts
+    template: show_page
+    name: date
+    dir: shows
