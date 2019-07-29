@@ -39,3 +39,58 @@ body {
 .cover_content_details_venue {
     width: 40%;
 }
+
+// ---------------
+// SHOW
+// ---------------
+
+.show {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.show_headliner {
+    h1 {
+        font-size: 6em;;
+        line-height: 1em;
+    }
+}
+
+.show_openers {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+
+    h2 {
+        font-weight: 300;
+        display: inline;
+        color: gray;
+        font-size: 20px;
+    }
+}
+
+.show_venue {
+    font-family: 'ff-ernestine-pro', serif;
+    font-weight: 400;
+}
+
+.show_friends {
+    span, .list-comma, p {
+        display: inline;
+    }
+}
+
+// ---------------
+// LINKS
+// ---------------
+
+a, a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}

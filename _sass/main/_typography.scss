@@ -39,3 +39,13 @@ p, span {
         content: '';
     }
 }
+
+.list-comma {
+    :after {
+        content: ',\00a0';
+    }
+
+    :last-child:after {
+        content: '';
+    }
+}
