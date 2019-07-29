@@ -16,7 +16,7 @@ title: Home
             </div>
             <div class="cover_content">
                 <div class="cover_content_artists">
-                    <h1><a href="shows/{{ concert.date | datapage_url: dir }}">{{ headliner[0].artist | jsonify | remove:'"'}}</a></h1>
+                    <h1><a href="shows/{{ concert.date | datapage_url: dir | remove: '/' }}">{{ headliner[0].artist | jsonify | remove:'"'}}</a></h1>
                 </div>
                 <div class="cover_content_opener">
                     {% for opener in openers %}
