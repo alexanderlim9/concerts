@@ -10,10 +10,12 @@ h1, h2, h3, p {
 
 h1 {
     font-weight: 500;
-}
+    font-size: 2.2em;
+    line-height: 1.1em;
 
-h1 {
-    font-size: 3.2em;
+    @include media($sm) {
+        font-size: 3.2em;
+    }
 }
 
 p, span {
@@ -22,13 +24,11 @@ p, span {
 }
 
 .cover_content_opener {
-    margin-top: -5px;
-
     h2 {
         font-weight: 300;
         display: inline;
         color: gray;
-        font-size: 20px;
+        font-size: 16px;
     }
     
     :after {
@@ -37,6 +37,12 @@ p, span {
 
     :last-child:after {
         content: '';
+    }
+
+    @include media($sm) {
+        h2 {
+            font-size: 20px;
+        }
     }
 }
 
