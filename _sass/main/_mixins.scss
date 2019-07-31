@@ -1,0 +1,13 @@
+@mixin media($breakpoint) {
+    @media (min-width: $breakpoint) {
+        @content;
+    }
+}
+
+// breakpoints
+$mobile: 450px;
+$tablet: 768px;
+$sm: 960px;
+$md: 1200px;
+$lg: 1500px;
+$xl: 1800px;
