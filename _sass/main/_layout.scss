@@ -79,14 +79,21 @@ body {
 
 .show_headliner {
     h1 {
-        font-size: 6em;;
+        font-size: 4em;
         line-height: 1em;
+    }
+
+    @include media($sm) {
+        h1 {
+            font-size: 6em;
+        }
     }
 }
 
 .show_openers {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     margin-top: 10px;
 
     h2 {
