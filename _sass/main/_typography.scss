@@ -46,6 +46,11 @@ p, span {
     }
 }
 
+.cover_content_details_date, .cover_content_details_venue {
+    font-size: 14px;
+    line-height: 16px;
+}
+
 .list-comma {
     :after {
         content: ',\00a0';
