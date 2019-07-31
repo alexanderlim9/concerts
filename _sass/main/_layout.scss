@@ -3,7 +3,11 @@ body {
     flex-direction: column;
     align-items: center;
     margin: 0px;
-    padding: 100px;
+    padding: 10px;
+
+    @include media($sm) {
+        padding: 100px;
+    }
 }
 
 .container {
