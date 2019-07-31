@@ -20,7 +20,7 @@
     {% endfor %}
 </div>
 <div class="show_details">
-    <h3 class="show_venue">{{venue[0].name}}</h3>
+    <h3 class="show_venue">{{venue[0].name}} / {{show | | date: "%B %-d, %Y"}}</h3>
     <div class="show_friends">
         {% if friends.size > 0 %}
             <span>With: </span>
