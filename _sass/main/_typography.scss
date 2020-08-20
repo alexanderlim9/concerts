@@ -1,11 +1,18 @@
 html {
-    font-family: ff-more-web-pro-wide, serif;
-    font-weight: 400;
+    font-family: 'monument extended', serif;
+    font-weight: 600;
     font-style: normal;
 }
 
 h1, h2, h3, p {
     margin: 0px;
+}
+
+.cover {
+  h1 {
+    text-transform: uppercase;
+    font-weight: 600;
+  }
 }
 
 h1 {
@@ -19,7 +26,7 @@ h1 {
 }
 
 p, span {
-    font-family: 'ff-ernestine-pro', serif;
+    font-family: 'acumin-pro-wide', Tahoma, sans-serif;
     font-weight: 400;
 }
 
