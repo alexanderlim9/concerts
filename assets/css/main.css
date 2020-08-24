@@ -1,0 +1,147 @@
+body {
+  background-color: #010311;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0px;
+  padding: 10px; }
+  @media (min-width: 960px) {
+    body {
+      padding: 50px; } }
+
+.container {
+  width: 100%;
+  max-width: 1200px; }
+
+a,
+a:visited {
+  color: white;
+  text-decoration: none; }
+  a:hover,
+  a:visited:hover {
+    color: #ffe600; }
+
+html {
+  font-family: "monument extended", serif;
+  font-weight: 600;
+  font-style: normal; }
+
+h1,
+h2,
+h3,
+p {
+  margin: 0px; }
+
+.cover h1 {
+  text-transform: uppercase;
+  font-weight: 600; }
+
+h1 {
+  font-weight: 500;
+  font-size: 2.2em;
+  line-height: 1.1em; }
+  @media (min-width: 960px) {
+    h1 {
+      font-size: 3.2em; } }
+
+p,
+span {
+  font-family: "acumin-pro-wide", Tahoma, sans-serif;
+  font-weight: 400; }
+
+.cover_content_opener h2 {
+  display: inline;
+  font-size: 16px;
+  font-weight: 200;
+  opacity: 0.5; }
+.cover_content_opener :after {
+  content: " | "; }
+.cover_content_opener :last-child:after {
+  content: ""; }
+@media (min-width: 960px) {
+  .cover_content_opener h2 {
+    font-size: 20px; } }
+
+.cover_content_details_date,
+.cover_content_details_venue {
+  font-size: 14px;
+  line-height: 16px; }
+  @media (min-width: 960px) {
+    .cover_content_details_date,
+    .cover_content_details_venue {
+      font-size: 16px; } }
+
+.list-comma :after {
+  content: ",\00a0"; }
+.list-comma :last-child:after {
+  content: ""; }
+
+.cover {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+  @media (min-width: 960px) {
+    .cover {
+      margin-top: 15px;
+      margin-bottom: 15px; } }
+
+.cover_number {
+  width: 10%; }
+
+.cover_content {
+  width: 90%; }
+
+.cover_content_details {
+  display: flex;
+  flex-direction: row; }
+
+.cover_content_rule {
+  margin: 5px 0px 0px 0px; }
+  @media (min-width: 960px) {
+    .cover_content_rule {
+      margin: 0.5em auto 0.3em; } }
+
+.cover_content_details_date {
+  width: 50%;
+  padding-right: 5px; }
+  @media (min-width: 960px) {
+    .cover_content_details_date {
+      width: 30%; } }
+
+.cover_content_details_venue {
+  width: 50%; }
+  @media (min-width: 960px) {
+    .cover_content_details_venue {
+      width: 30%; } }
+
+.show {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%; }
+
+.show_headliner h1 {
+  font-size: 6em;
+  line-height: 1em; }
+
+.show_openers {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px; }
+  .show_openers h2 {
+    display: inline;
+    font-size: 20px;
+    font-weight: 200;
+    opacity: 0.5; }
+
+.show_venue {
+  font-family: "acumin-pro-wide", Tahoma, sans-serif;
+  font-weight: 400; }
+
+.show_friends span,
+.show_friends .list-comma,
+.show_friends p {
+  display: inline; }
