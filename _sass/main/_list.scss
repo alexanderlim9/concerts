@@ -1,0 +1,50 @@
+.cover {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  @include media($sm) {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+.cover_number {
+  width: 10%;
+}
+
+.cover_content {
+  width: 90%;
+}
+
+.cover_content_details {
+  display: flex;
+  flex-direction: row;
+}
+
+.cover_content_rule {
+  margin: 5px 0px 0px 0px;
+
+  @include media($sm) {
+    margin: 0.5em auto 0.3em;
+  }
+}
+
+.cover_content_details_date {
+  width: 50%;
+  padding-right: 5px;
+
+  @include media($sm) {
+    width: 30%;
+  }
+}
+
+.cover_content_details_venue {
+  width: 50%;
+
+  @include media($sm) {
+    width: 30%;
+  }
+}

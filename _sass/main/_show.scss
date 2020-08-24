@@ -1,0 +1,39 @@
+.show {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.show_headliner {
+  h1 {
+    font-size: 6em;
+    line-height: 1em;
+  }
+}
+
+.show_openers {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+
+  h2 {
+    font-weight: 300;
+    display: inline;
+    color: gray;
+    font-size: 20px;
+  }
+}
+
+.show_venue {
+  font-family: "acumin-pro-wide", Tahoma, sans-serif;
+  font-weight: 400;
+}
+
+.show_friends {
+  span,
+  .list-comma,
+  p {
+    display: inline;
+  }
+}
