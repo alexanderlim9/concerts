@@ -36,10 +36,10 @@ span {
 
 .cover_content_opener {
   h2 {
-    font-weight: 300;
     display: inline;
-    color: gray;
     font-size: 16px;
+    font-weight: 200;
+    opacity: 0.5;
   }
 
   :after {
