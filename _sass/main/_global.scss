@@ -8,7 +8,7 @@ body {
   padding: 10px;
 
   @include media($sm) {
-    padding: 100px;
+    padding: 50px;
   }
 }
 
