@@ -1,4 +1,6 @@
 body {
+  background-color: #010311;
+  color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,10 +19,10 @@ body {
 
 a,
 a:visited {
-  color: black;
+  color: white;
   text-decoration: none;
 
   &:hover {
-    color: red;
+    color: rgb(255, 230, 0);
   }
 }
