@@ -1,11 +1,14 @@
 html {
-    font-family: 'monument extended', serif;
-    font-weight: 600;
-    font-style: normal;
+  font-family: "monument extended", serif;
+  font-weight: 600;
+  font-style: normal;
 }
 
-h1, h2, h3, p {
-    margin: 0px;
+h1,
+h2,
+h3,
+p {
+  margin: 0px;
 }
 
 .cover {
@@ -16,58 +19,60 @@ h1, h2, h3, p {
 }
 
 h1 {
-    font-weight: 500;
-    font-size: 2.2em;
-    line-height: 1.1em;
+  font-weight: 500;
+  font-size: 2.2em;
+  line-height: 1.1em;
 
-    @include media($sm) {
-        font-size: 3.2em;
-    }
+  @include media($sm) {
+    font-size: 3.2em;
+  }
 }
 
-p, span {
-    font-family: 'acumin-pro-wide', Tahoma, sans-serif;
-    font-weight: 400;
+p,
+span {
+  font-family: "acumin-pro-wide", Tahoma, sans-serif;
+  font-weight: 400;
 }
 
 .cover_content_opener {
+  h2 {
+    font-weight: 300;
+    display: inline;
+    color: gray;
+    font-size: 16px;
+  }
+
+  :after {
+    content: " | ";
+  }
+
+  :last-child:after {
+    content: "";
+  }
+
+  @include media($sm) {
     h2 {
-        font-weight: 300;
-        display: inline;
-        color: gray;
-        font-size: 16px;
+      font-size: 20px;
     }
-    
-    :after {
-        content: ' | ';
-    }
-
-    :last-child:after {
-        content: '';
-    }
-
-    @include media($sm) {
-        h2 {
-            font-size: 20px;
-        }
-    }
+  }
 }
 
-.cover_content_details_date, .cover_content_details_venue {
-    font-size: 14px;
-    line-height: 16px;
+.cover_content_details_date,
+.cover_content_details_venue {
+  font-size: 14px;
+  line-height: 16px;
 
-    @include media($sm) {
-        font-size: 16px;
-    }
+  @include media($sm) {
+    font-size: 16px;
+  }
 }
 
 .list-comma {
-    :after {
-        content: ',\00a0';
-    }
+  :after {
+    content: ",\00a0";
+  }
 
-    :last-child:after {
-        content: '';
-    }
+  :last-child:after {
+    content: "";
+  }
 }
